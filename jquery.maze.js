@@ -191,9 +191,9 @@ jQuery.fn.generateMaze = function(attributes) {
     size_y: false,
     callback: 'mazeVictory',
     cheater: false,
-    complexity: 1,
-    variability: 1,
-    min_steps: 20,
+    complexity: 2,
+    variability: 0.8,
+    min_steps: 30,
     trace: false,
     connect: false
   };
