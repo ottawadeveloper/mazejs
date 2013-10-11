@@ -1,3 +1,5 @@
+(function($) {
+
 function generateMaze(height, width, allow_connections, min_goal_distance, maze_max_branches, maze_branch_include, min_steps) {
   var maze = {};
   var grid = {};
@@ -255,26 +257,32 @@ $(document).keydown(function(event) {
     case 87:
     case 38:
       mazeMoveTo(maze_x - 1, maze_y);
+      e.stopPropagation();
       // UP
       break;
     case 97:
     case 65:
     case 37:
       mazeMoveTo(maze_x, maze_y - 1);
+      e.stopPropagation();
       // LEFT
       break;
     case 115:
     case 83:
     case 40:
       mazeMoveTo(maze_x + 1, maze_y);
+      e.stopPropagation();
       // DOWN
       break;
     case 100:
     case 68:
     case 39:
       mazeMoveTo(maze_x, maze_y + 1);
+      e.stopPropagation();
       // RIGHT
       break;
     default:
   }
 });
+
+})(jQuery);
