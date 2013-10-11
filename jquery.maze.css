@@ -1,0 +1,28 @@
+.maze {
+  border: 15px solid #000;
+  float: left;
+  width: auto;
+}
+.maze-trace {
+  background-color: #CCC;
+}
+.maze-cell {
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+.maze-row-start {
+  clear: left;
+}
+.maze-block {
+  background-color: #000;    
+}
+.maze-start {
+  background-color: #CCF;
+}
+.maze-active {
+  background-color: #00C;
+}
+.maze-goal {
+  background-color: #F00;
+}
